@@ -8,8 +8,66 @@ html,body{
     height: 100%;
     width:100%;
 }
-#page1{
+
+#page1
+{
     height:100vh;
-    width:100vh;
+    width:100%;
     background-color: bisque;
+    position: relative;
+}
+nav
+{
+   padding:2vw 2vw ;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-p2{
+align-items: center;
+display: flex;
+gap: 1vw;
+}
+#nav-p2 h4{
+    padding: 10px 20px;
+    border: 1px solid rgb(143, 138, 138);
+    border-radius:40px;
+    font-weight: 500;
+    color: black;
+    font-size: 17px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+   
+}
+#nav-p2 h4 a
+{
+    text-decoration: none;
+    color:black;
+    position: relative;
+    z-index: 9;
+}
+#nav-p2 h4::after
+{
+    content: "";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background-color:black;
+    left:0px;
+    bottom:-100%;
+    border-radius: 50%;
+    transition:all ease 0.4s ;
+
+}
+#nav-p2 h4:hover::after{
+   
+    bottom:0;
+    border-radius: 0;
+}
+#nav-p2 h4:hover a{
+    color: white;
+   
 }
