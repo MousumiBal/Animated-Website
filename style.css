@@ -16,19 +16,29 @@ html,body{
     background-color: bisque;
     position: relative;
 }
-nav
+header{
+    width: 100%;
+    position: relative;
+}
+#logo
 {
    padding:2vw 2vw ;
-    width: 100%;
+    width:50;
     /* background-color: brown; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    float:left;
 }
-#nav-p2{
-align-items: center;
-display: flex;
-gap: 1vw;
+ #nav-p2{
+    width: 50;
+   /* align-items: center;  */
+   display: flex;
+   gap: 1vw;
+   float: right;
+   padding:2vw 2vw ;
+   
+
 }
 #nav-p2 h4{
     padding: 10px 20px;
@@ -69,5 +79,11 @@ gap: 1vw;
 }
 #nav-p2 h4:hover a{
     color: white;
-   
+    
+} 
+
+#center{
+     height: 20vh;
+     width: 100%;
+     position: relative;
 }
