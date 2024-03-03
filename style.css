@@ -15,14 +15,17 @@ html,body{
     width:100%;
     background-color: bisque;
     position: relative;
+    padding:0 2vw
 }
 header{
+    height:20vh;
     width: 100%;
     position: relative;
+    /* background-color:brown ; */
 }
 #logo
 {
-   padding:2vw 2vw ;
+   padding:2vw 0vw ;
     width:50;
     /* background-color: brown; */
     display: flex;
@@ -83,7 +86,31 @@ header{
 } 
 
 #center{
-     height: 20vh;
+     height: 65vh;
      width: 100%;
-     position: relative;
+     /* background-color: darkgoldenrod; */
+     display: flex;
+     align-items: flex-end;
+     justify-content: space-between;
+     border-bottom: 1px solid chocolate;
+     padding-bottom: 2.5vw;
+    
 }
+
+#left h3{
+    width:25vw;
+    font-size:1.8vw;
+    font-family:Neuehaasdisplay mediu, sans-serif;
+     line-height: 2vw;
+       
+
+}
+#center h1{
+    
+    font-size: 10vw;
+    line-height: 8vw;
+    text-align: right ;
+    font-family:Neuehaasdisplay mediu, sans-serif;
+
+}
+
