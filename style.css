@@ -11,7 +11,8 @@ html,body{
 
 #page1
 {
-    height:100vh;
+    min-height:100vh;
+   
     width:100%;
     background-color: bisque;
     position: relative;
@@ -113,4 +114,79 @@ header{
     font-family:Neuehaasdisplay mediu, sans-serif;
 
 }
+#page1 video{
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 4vw;
+    position: relative;
+}
+#fireball-anime{
+    position:absolute;
+     width: 46vw;
+     height: 36vw;
+    
+     right: 0;
+     top: 70vh;
+}
+#fireball-1{
+    
+    width:100%;
+    height:100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+    background-color: orangered;
+    filter:blur(20px);
 
+}
+#fireball-2{
+    
+    width:30vw;
+    height:30vw;
+    border-radius:50%;
+    position: absolute;
+    background:linear-gradient(orangered,rgb(255, 89, 0));
+    filter:blur(20px);
+    animation: anime2 ;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    
+    
+}
+#fireball-3{
+    position: absolute;
+    width:30vw;
+    height:30vw;
+    border-radius: 50%;
+     background:linear-gradient(orangered,rgb(255, 89, 0));
+    filter:blur(20px);
+    animation: anime1 ;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes anime1 {
+    from{
+        transform: translate(55%,-3%);
+    }
+    to{
+
+      
+        transform: translate(0%,10%);
+    }
+}
+@keyframes anime2 {
+    from{
+        transform: translate(5%,-5%);
+    }
+    to{
+
+      
+        transform: translate(-20%,30%);
+    }
+}
