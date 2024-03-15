@@ -191,7 +191,7 @@ header{
     }
 }
 #page2 {
-    min-height: 100vh;
+    min-height:20vh;
     width: 100%;
     background-color:bisque;
     padding: 1vw 0;
@@ -240,26 +240,101 @@ header{
         transform: translateX(-100%);
     }
 }
+#page2-bottom{
+    min-height: 100vh;
+    width: 100%;
+    background-color:bisque;
+    padding: 1vw 0;
+    position: relative;
+    
+
+}
+    #page2 #gooey {
+        height: 30vw;
+        width: 30vw;
+        position: absolute;
+        border-radius: 50%;
+        background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+        /* background: linear-gradient(to top right,red,blue); */
+        top: 58%;
+        left: 25%;
+        filter: blur(20px);
+        animation-name: gooey;
+        animation-duration:3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+
+
+
+    
+}
+@keyframes gooey {
+    from {
+        filter: blur(20px);
+        transform: translate(10%, -10%) skew(0);
+    }
+
+    to {
+        filter: blur(30px);
+        transform: translate(-10%, 10%) skew(-12deg);
+    }
+}
+    #center2{
+        width:60vw;
+        /* background-color:chartreuse; */
+        float:left;
+        z-index:6;
+        
+    
+     }
+     #center2 h2{
+       
+        font-size:4vw;
+        line-height:4.5vw;
+        font-family:Neuehaasdisplay mediu, sans-serif;
+        margin-left: 4vw;
+        margin-top: 7vw;
+       
+        
+    
+    
+     }
+     #right2{
+        float:right;
+     }
+     #right2 img{
+     
+        margin-right:8vw;
+        margin-top:15vw;
+        border-radius:1vw;
+     }
+     #right2 p{
+        font-family:Neuehaasdisplay mediu, sans-serif;
+        width:400px;
+        margin-top: 3vw;
+        font-size:2vh;
+     }
+
 #page3{
   height:80vh;
   width:100%;
-  padding:10vw 2vw;
+  padding:10vw 3vw;
 
-  background: #eee ;
+  background:bisque ;
 }
 .swiper {
     width: 100%;
     height: 100%;
   }
 
-  /* .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+  .swiper-slide {
+    text-align: left;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-  } */
+  }
 
   /* .swiper-slide img {
     display: block;
@@ -269,10 +344,8 @@ header{
   } */
 
   .swiper-slide {
-    width: 30%;
+    width: 25%;
     border-left: 1px solid #f32020;
     padding: 0 2vw;
   }
 
- 
-  
